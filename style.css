@@ -17,11 +17,16 @@ h1 {
     font-size: 50px;
     font-weight: 500;
     line-height: 120%;
-    width: 800px;
+    min-width: 600px;
+    max-width: 900px;
 }
 
 h2 {
     font-weight: 300;
+}
+
+.title-text-div {
+    flex: 1;
 }
 
 button {
@@ -54,9 +59,20 @@ button {
 }
 
 .separation-line {
-    max-width: 1500px;
+    max-width: 1400px;
     height: 2px;
-    border-bottom: 1px solid #c6c6c6;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #c6c6c6;
+}
+
+.separation-line.strong {
+    width: 40px;
+    border-color: black;
+}
+
+.separation-line.full-width {
+    width: 1400px;
 }
 
 .full-width-div {
@@ -73,15 +89,6 @@ nav {
     align-items: center;
     margin: 20px 30px;
 }
-
-/*nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-    max-width: 1500px;
-    padding: 15px 30px;
-}*/
 
 .logo {
     font-weight: 900;
@@ -128,10 +135,6 @@ nav {
     width: 1400px;
 }
 
-.title-text-div {
-    flex: 1;
-}
-
 .hero-cta-div {
     display: flex;
     justify-content: space-between;
@@ -163,37 +166,57 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
-    max-width: 1500px;
-    margin: auto;
+    width: 1400px;
+    margin: 0px 30px;
 }
 
-.blue-div {
+.full-width-div.blue {
     background-color: #20204c;
-    width: 100%;
-    padding: 50px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.title-text-div.narrow {
+    max-width: 800px;
 }
 
 .blue-div-content {
     color: white;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 70px;
+    gap: 50px;
+    width: 1400px;
+    margin: 50px 30px;
 }
 
 .mobile-screenshot {
     object-fit: cover;
     flex: 1;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .third-section {
-    margin: auto;
-    max-width: 1500px;
-    padding: 0px 30px;
+    margin: 0px 30px;
+    width: 1400px;
+}
+
+.title-text-div.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-centered {
+    text-align: center;
+}
+
+.icon-text-div {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.yellow-checkbox {
+    filter: invert(81%) sepia(19%) saturate(6217%) hue-rotate(7deg) brightness(96%) contrast(101%);
 }
 
 .timeline-div {
@@ -232,9 +255,8 @@ nav {
 }
 
 .reviews-section {
-    margin: auto;
-    max-width: 1500px;
-    padding: 0px 30px;
+    margin: 0px 30px;
+    max-width: 1400px;
 }
 
 .review-div {
@@ -244,16 +266,29 @@ nav {
 }
 
 .quote-div {
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 500px;
+}
+
+.profile-image.no-margin {
+    margin: 0px 5px;
+}
+
+.profile-images-div.no-margin {
+    margin: 0px;
 }
 
 footer {
-    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
     color: white;
+    margin: 30px 30px;
+    width: 1400px;
 }
 
 .footer-text {
-    width: 600px;
+    max-width: 400px;
 }
 
 ul {
@@ -262,18 +297,30 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .footer-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-menu-div {
+    display: flex;
+    gap: 100px;
 }
 
 .copyright {
     color: white;
     font-size: 14px;
-    color: #c6c6c6;
+    padding: 20px;
+}
+
+.high {
+    padding: 50px 0px;
 }
 
 
